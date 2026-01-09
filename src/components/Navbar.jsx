@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import {HomeIcon} from "./ui/home";
+
+
 
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -44,10 +45,10 @@ export const Navbar = () => {
     >
       <nav className="h-12 w-screen flex items-center justify-center">
         <ul className="flex w-full justify-evenly text-[12px] font-extrabold xs:text-[14px] md:text-[16px] lg:text-[18px]">
-          
-          <li><Link to={"/project"} >Projects</Link></li>
-          <li><Link to={"/experience"} >Experience</Link></li>
-          <li><Link to={"/Education"}>Education</Link></li>
+          <li><Link to={"/"} >Home</Link></li>
+          <li><Link to={"/about"} >About Me</Link></li>
+          <li><Link to={"/projects"} >Projects</Link></li>
+          <li><Link to={"/services"}>Services</Link></li>
         </ul>
       </nav>
     </section>
