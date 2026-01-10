@@ -1,6 +1,6 @@
-import bgImg from "../assets/Hero-img1.avif";
 import LightRays from "../components/LightRays";
 import StarBorder from "../components/StarBorder";
+import bgImg from "../assets/Herobg.png";
 
 import { useState, useEffect } from "react";
 
@@ -23,19 +23,11 @@ function Hero() {
 
   return (
     <>
-      <section className="bg-black max-w-10xl h-screen relative flex justify-center items-center text-center">
-        {/* Background Image */}
-        <div className="w-screen h-full">
-          <img
-            src={bgImg}
-            fetchPriority="high"
-            alt="Hero-bg"
-            className="w-screen pb-40 md:pb-0 h-full object-cover"
-          />
-        </div>
+      <section className="bg-black/75 max-w-10xl h-screen relative flex justify-center items-center text-center">
+      
 
-        <div className="absolute inset-0 w-screen min-h-screen z-20 pointer-events-none">
-          <LightRays
+       <div className="absolute inset-0 w-screen min-h-screen z-20 pointer-events-none">
+           <LightRays
             raysOrigin="top-left"
             raysColor="#ffffff"
             raysSpeed={0.3}
@@ -66,9 +58,19 @@ function Hero() {
             noiseAmount={0}
             distortion={0.1}
           />
-        </div>
+        </div> 
 
-        {/* Dark Overlay */}
+       
+        {/* Background Image */}
+        <div className="w-screen h-screen">
+          <img
+            src={bgImg}
+            alt="Hero Background"
+            className="absolute inset-0 w-full h-full object-cover object-center opacity-60"
+          />
+          </div> 
+
+         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-linear-to-br from-black/85 via-black/50 to-transparent z-10"></div>
         <div className="absolute inset-0 bg-linear-to-l from/85 via-black/50 to-transparent z-10"></div>
 
@@ -117,3 +119,6 @@ function Hero() {
 }
 
 export default Hero;
+
+
+
