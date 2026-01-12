@@ -1,7 +1,9 @@
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import LandingPage from "./page/LandingPage";
+import Aboutme from "./sections/Aboutme";
 import Projects from "./sections/Projects";
+import Services from "./sections/Services";
 import Experience from "./sections/Experience";
 import Education from "./sections/Education";
 
@@ -15,9 +17,9 @@ function App() {
         <Route path="/" element = {<>
         <LandingPage />
         </>} />
-        <Route path="/project" element = {<Projects/>} />
-        <Route path="/experience" element = {<Experience/>} />
-        <Route path="/education" element = {<Education/>} />
+        <Route path="/about" element = {<Aboutme/>} />
+        <Route path="/projects" element = {<Projects/>} />
+        <Route path="/services" element = {<Services/>} />
       </Routes>
     </>
   );
