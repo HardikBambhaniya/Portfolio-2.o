@@ -1,11 +1,13 @@
-import Hero from "../sections/Hero";
-import Aboutme from "../sections/Aboutme";
+import DemoOne from "../sections/DemoBackgroundPaths.jsx";
+import Hero from "../sections/Hero.jsx";
 
 function LandingPage () {
     return (
         <>
+        <DemoOne />
+            {/* <DemoBackgroundPaths /> */}
             <Hero />
-            <Aboutme />
+         
         </>
     );
 }

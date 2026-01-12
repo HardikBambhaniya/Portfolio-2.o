@@ -34,7 +34,7 @@ export const Navbar = () => {
         px-2
 
         transition-all
-        duration-800 ease-[cubic-bezier(0.22,1,0.36,1)]
+        duration-1200 ease-[cubic-bezier(0.22,1,0.36,1)]
 
         ${
           scrolled
